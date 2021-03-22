@@ -1,0 +1,39 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #2727ce;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    background-size: cover;
+    height: 20rem;
+    justify-content: space-around;
+    display: flex;
+}
+
+main{
+    background-color: #ff000086;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    background-size: cover;
+    height: 20rem;
+    flex-grow: 1;
+}
+
+footer{
+    background-color: rgba(245, 245, 245, 0.185);
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+
+}
+
+img{
+    display:flex;
+    height: 10rem;
+    width: 10rem;
+}
+
+.d-flex{
+    display:flex
+}
+

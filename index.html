@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Clone site with bootstrap</title>
+</head>
+
+<!--Container-fluid takes up edge to edge of page.
+row is always a child of container and col (takes up a total of 12 unites and if it exceeds it will drop down or "wrap" then)
+col will automatically distribute if not defined(col-3 col-6 etc).. if you have a col and then a col-3 the col will take up the rest of the space
+a col can not have a col as a child. alternate between row to col and if need be go back to row which starts the 12 units over 
+and can go indefintiely 
+only adjust left and right to move content within a col never in a container or row
+can use margin vertically but never horizontally outside of col -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><i class="fab fa-autoprefixer"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SUPERHEROES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">TV SHOWS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">MOVIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">CHRONOLOGY</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-5 mt-5 text-light text-center p-3">
+            <h1>AVENGERS</h1>
+            <p>Not all heroes are created equal</p>
+        </div>
+        <div class="col-5 m-3 text-light p-5 text-center">
+            <h1><img src="Avengers.png" alt="" class="w-75"></h1>
+            <p>Marvel Universe</p>
+        </div>
+    </div>
+</header>
+<main class="container-fluid">
+    <div class="row d-flex">
+        <div class="col text-light text-center">
+            <p><em>"Avengers, Assemble!"</em>-Captain America</p>
+            <p><em>"There was an idea...called the Avengers Initiative. The idea was to bring together a group of
+                    remarkable people, and see if they could be something more. See if they could work together when
+                    we needed them to fight the battles we never could"</em>-Director Nick Fury</p>
+            <p>Who is your favorite Avenger?</p><button type="button" class="btn btn-secondary btn-sm">Find out
+                more</button>
+        </div>
+    </div>
+    <div class="row p-5">
+        <div class="col-4 mt-4">
+            <div class="card w-100">
+                <img class="card-img-top" src="./Marvel infinity sage.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">List of Marvel Cinema</h5>
+                    <p class="card-text">Past.. Present.. New Marvel movies</p>
+                    <a href="#" class="btn btn-secondary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+            <div class="card w-100">
+                <img class="card-img-top" src="./Marvel Cinematic Comics.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Comic books</h5>
+                    <p class="card-text">Get the full story</p>
+                    <a href="#" class="btn btn-secondary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 mt-4">
+            <div class="card w-100">
+                <img class="card-img-top" src="./X men marvel.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">New Releases</h5>
+                    <p class="card-text">X-men...Fantastic 4... MORE</p>
+                    <a href="#" class="btn btn-secondary">More info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <p>Phase1</p>
+            <p>Phase2</p>
+            <p>Phase3</p>
+            <p>Phase4</p>
+        </div>
+        <div class="col-6">
+            <div>
+                <li>Movies</li>
+                <li>TV Shows</li>
+            </div>
+            <div>
+                <li>Comics</li>
+                <li>THE SAGA</li>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
